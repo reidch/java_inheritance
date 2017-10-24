@@ -23,7 +23,6 @@ public class Employee {
         return this.empId;
     }
 
-
     public String getName() {
         return this.name;
     }
@@ -46,5 +45,13 @@ public class Employee {
         return this.ssn;
     }
 
+    //Extension, Prevent a negative value for the raiseSalary method:
+    //    commented out so that the earlier RaiseSalary function works
+//    public double raiseSalary(double amount) {
+//        if (amount >= 0) {
+//            this.salary += amount;
+//        }
+//        return this.salary;
+//    }
 
 }

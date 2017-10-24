@@ -70,11 +70,11 @@ public class EmployeeTest {
 //        assertEquals(30000.00, employee.getSalary(), 0.01);
 //    }
 
-    @Test
-    public void canRaiseSalary() {
-        employee.raiseSalary(10000.00);
-        assertEquals(40000.00, employee.getSalary(), 0.1);
-    }
+//    @Test
+//    public void canRaiseSalary() {
+//        employee.raiseSalary(10000.00);
+//        assertEquals(40000.00, employee.getSalary(), 0.1);
+//    }
 
     @Test
     public void deptHasName(){
@@ -95,4 +95,24 @@ public class EmployeeTest {
     public void directorBudget(){
         assertEquals(6000000.00, director.getBudget(), 0.1);
     }
+
+//  EXTENSION
+    @Test
+    public void canAdminRaiseSalary() {
+        admin.raiseSalary(5000.00);
+        assertEquals(25000.00, admin.getSalary(), 0.1);
+    }
+
+    @Test
+    public void canSetDirectorName() {
+        director.setName("Gail");
+        assertEquals("Gail", director.getName());
+    }
+
+//    commented out so that the earlier canRaiseSalary test runs
+//    @Test
+//    public void canRaiseSalary() {
+//        employee.raiseSalary(-5000.00);
+//        assertEquals(30000.00, employee.getSalary(), 0.1);
+//    }
 }
